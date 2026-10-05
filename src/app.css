@@ -30,4 +30,14 @@ button:disabled { opacity:.45; cursor:not-allowed; }
 .tabs [role="tab"] { background:#e4eeee; color:#173c43; }
 .tabs [role="tab"][data-selected] { background:#0f766e; color:white; }
 .timeline { border-left:2px solid #b9d6d6; margin-left:6px; padding-left:16px; }
+.notice { border-radius:10px; padding:10px 14px; margin:0 0 14px; font-weight:600; }
+.notice.ok { background:#e7f7ef; color:#17613d; border:1px solid #b6e3c8; }
+.notice.err { background:#fdeceb; color:#912018; border:1px solid #f3c1bd; }
+.meta-line { color:#5d7780; font-size:13px; margin:8px 0 14px; }
+.callout { background:#eef6f7; border-left:4px solid #0e7490; border-radius:8px; padding:9px 12px; color:#214b57; font-size:14px; }
+.verdict.pass { color:#17613d; font-weight:700; }
+.verdict.fail { color:#912018; font-weight:700; }
+.danger-badge { background:#fdeceb !important; color:#912018 !important; }
+.merge-box { border:1px dashed #b9d0d3; border-radius:12px; padding:12px 14px 14px; display:grid; gap:10px; }
+.merge-box legend { padding:0 6px; font-weight:700; }
 @media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr} }

@@ -8,10 +8,9 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "strict": true,
-    "noEmit": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "types": ["vinxi/client"],
+    "allowImportingTsExtensions": true,
     "paths": { "~/*": ["./src/*"] }
   },
   "include": ["src", "app.config.ts", "panda.config.ts"]

@@ -8,7 +8,8 @@
     "build": "vinxi build",
     "start": "vinxi start --host 0.0.0.0 --port 62025",
     "preview": "vinxi start --host 0.0.0.0 --port 62025",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "test": "node -e \"require('esbuild').buildSync({entryPoints:['src/lib/audit-domain.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.tmp-test.mjs'});\" && node .tmp-test.mjs && rm -f .tmp-test.mjs"
   },
   "dependencies": {
     "@ark-ui/solid": "^5.39.2",

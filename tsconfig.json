@@ -11,8 +11,10 @@
     "noEmit": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "types": ["vinxi/client"],
-    "paths": { "~/*": ["./src/*"] }
+    "paths": {
+      "~/*": ["./src/*"],
+      "vinxi/client": ["./src/env.d.ts"]
+    }
   },
   "include": ["src", "app.config.ts", "panda.config.ts"]
 }

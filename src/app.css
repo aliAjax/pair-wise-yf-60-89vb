@@ -30,4 +30,16 @@ button:disabled { opacity:.45; cursor:not-allowed; }
 .tabs [role="tab"] { background:#e4eeee; color:#173c43; }
 .tabs [role="tab"][data-selected] { background:#0f766e; color:white; }
 .timeline { border-left:2px solid #b9d6d6; margin-left:6px; padding-left:16px; }
+.issue-list { list-style:none; margin:0; padding:0; }
+.sub-sources { list-style:none; margin:0 0 6px 26px; padding:0; border-left:2px solid #cfe3e2; }
+.issue-source { padding:10px 4px 10px 14px; }
+.issue-source h3 { font-size:15px; font-weight:500; }
+.suspended-title { margin:16px 0 4px; font-size:14px; color:#9a3412; }
+.issue-suspended { opacity:.85; }
+.source-actions { list-style:none; margin:0 0 12px; padding:0; display:grid; gap:8px; }
+.source-actions li { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.source-actions button { margin-left:auto; }
+.banner { background:#eef7f6; border:1px solid #b9dcd9; border-radius:10px; padding:10px 14px; margin:0 0 14px; }
+.banner.error { background:#fdf2f0; border-color:#f0c4bd; }
+.merge-error { margin:0 0 12px; }
 @media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr} }
